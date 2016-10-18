@@ -52,7 +52,6 @@ public class Test {
 				System.out.println("");
 			}
 		}while(!str.equals("quit"));
-		System.out.println("111111111111");	
 		return;
 	}
 }
