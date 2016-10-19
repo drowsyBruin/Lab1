@@ -619,3 +619,5 @@ public class polynomial {
 
 	
 >>>>>>> origin_partner/master
+
+//Mod
