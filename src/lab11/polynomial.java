@@ -305,4 +305,4 @@ public class polynomial {
 }
 
 
-	
+//B2

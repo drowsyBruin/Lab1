@@ -363,3 +363,4 @@ public class polynomial_method {
  	}
 }
 
+//B2
