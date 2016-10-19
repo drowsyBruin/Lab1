@@ -52,8 +52,14 @@ public class Test {
 				System.out.println("");
 			}
 		}while(!str.equals("quit"));
+<<<<<<< HEAD
 			
 		return;
 	}
 }
 //Mod Test
+=======
+		return;
+	}
+}
+>>>>>>> origin_partner/master
