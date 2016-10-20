@@ -228,6 +228,8 @@ public class polynomial {
 		 boolean havev = false;
 		 if(len == 2)
 		 {
+			 System.out.println("new add 11111");
+			 System.out.println("new add 22222");
 			 if(count[0].equals("!d/d"))
 			 {
 				 String d_var = count[1] ;//±‰¡ø	
