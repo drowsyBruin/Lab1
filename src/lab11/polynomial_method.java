@@ -24,6 +24,7 @@ public class polynomial_method {
 	
 	public boolean like_var(polynomial root1, polynomial root2){
 		String var = root1.next.var;
+<<<<<<< HEAD
 		while(root2.next.flag != 2){	//root2æ²¡åˆ°æœ€åŽä¸€é¡¹
 			root2 = root2.next;
 
@@ -34,6 +35,18 @@ public class polynomial_method {
 					continue;
 
 			if(root2.var.equals(var)){	//æœ‰ç›¸åŒå˜é‡
+=======
+		while(root2.next.flag != 2){	//root2Ã»µ½×îºóÒ»Ïî
+			root2 = root2.next;
+
+			if(root2.flag == 1)
+				if(root2.op != '*')		//µ±Ç°·ûºÅÎª+£¬-·ûºÅ£¬Æ¥Åä½áÊø
+					break;
+				else					//µ±Ç°·ûºÅÎª'*'£¬ Ö±½ÓÌø¹ý
+					continue;
+
+			if(root2.var.equals(var)){	//ÓÐÏàÍ¬±äÁ¿
+>>>>>>> origin/mynew
 				if(!var.equals(""))
 					root2.exponent += root1.next.exponent;
 				root2.coef *= root1.next.coef;
@@ -50,13 +63,21 @@ public class polynomial_method {
 		polynomial tmp2 = root2;
 		while(tmp1.next.flag != 2){
 			tmp1 = tmp1.next;
+<<<<<<< HEAD
 			if(tmp1.flag == 1 && tmp1.op != '*')	//ä¸º+ï¼Œ-ç¬¦å·æ—¶ç»“æŸï¼Œåªå¯¹å•é¡¹å¼æ¯”è¾ƒ
+=======
+			if(tmp1.flag == 1 && tmp1.op != '*')	//Îª+£¬-·ûºÅÊ±½áÊø£¬Ö»¶Ôµ¥ÏîÊ½±È½Ï
+>>>>>>> origin/mynew
 				break;
 			length1++;
 		}
 		while(tmp2.next.flag != 2){
 			tmp2 = tmp2.next;
+<<<<<<< HEAD
 			if(tmp2.flag == 1 && tmp2.op != '*')	//ä¸º+ï¼Œ-ç¬¦å·æ—¶ç»“æŸï¼Œåªå¯¹å•é¡¹å¼æ¯”è¾ƒ
+=======
+			if(tmp2.flag == 1 && tmp2.op != '*')	//Îª+£¬-·ûºÅÊ±½áÊø£¬Ö»¶Ôµ¥ÏîÊ½±È½Ï
+>>>>>>> origin/mynew
 				break;
 			length2++;
 		}
@@ -72,7 +93,11 @@ public class polynomial_method {
 				if(tmp1.flag == 1){
 					if(tmp1.op == '*')
 						continue;
+<<<<<<< HEAD
 					else				//+ï¼Œ-ç¬¦å·ï¼Œè¡¨æ˜Žå•é¡¹å¼ç»“æŸ
+=======
+					else				//+£¬-·ûºÅ£¬±íÃ÷µ¥ÏîÊ½½áÊø
+>>>>>>> origin/mynew
 						break;
 				}
 					
@@ -85,22 +110,39 @@ public class polynomial_method {
 					if(tmp2.flag == 1){
 						if(tmp2.op == '*')
 							continue;
+<<<<<<< HEAD
 						else				//+ï¼Œ-ç¬¦å·ï¼Œè¡¨æ˜Žå•é¡¹å¼ç»“æŸ
+=======
+						else				//+£¬-·ûºÅ£¬±íÃ÷µ¥ÏîÊ½½áÊø
+>>>>>>> origin/mynew
 							break;
 					}
 					var2 = tmp2.var;
 					exponent2 = tmp2.exponent;
+<<<<<<< HEAD
 					if(var1.equals(var2) && exponent1 == exponent2){	//è¯¥å˜é‡æ‰¾åˆ°åŒç±»é¡¹ï¼Œè¿›è¡Œä¸‹ä¸ªå˜é‡æŸ¥æ‰¾
+=======
+					if(var1.equals(var2) && exponent1 == exponent2){	//¸Ã±äÁ¿ÕÒµ½Í¬ÀàÏî£¬½øÐÐÏÂ¸ö±äÁ¿²éÕÒ
+>>>>>>> origin/mynew
 						flag = true;
 						break;
 					}
 				}
+<<<<<<< HEAD
 				if(flag == false)	//è¯¥å˜é‡æœªåŒ¹é…æˆåŠŸ
 					return false;
 				else
 					flag = false;	//é‡ç½®flagæ ‡å¿—ï¼Œè¿›è¡Œä¸‹ä¸ªå˜é‡æŸ¥æ‰¾
 			}
 			return true;	//æ‰§è¡Œåˆ°è¿™æ­¥è¯´æ˜Žæ˜¯åŒç±»é¡¹
+=======
+				if(flag == false)	//¸Ã±äÁ¿Î´Æ¥Åä³É¹¦
+					return false;
+				else
+					flag = false;	//ÖØÖÃflag±êÖ¾£¬½øÐÐÏÂ¸ö±äÁ¿²éÕÒ
+			}
+			return true;	//Ö´ÐÐµ½Õâ²½ËµÃ÷ÊÇÍ¬ÀàÏî
+>>>>>>> origin/mynew
 		}	
 	}
 	
@@ -111,7 +153,11 @@ public class polynomial_method {
 		polynomial copy_tmp = root_tmp;
 		float coef;
 
+<<<<<<< HEAD
 		//ç¬¬ä¸€é¡¹çš„ç¬¬ä¸€ä¸ªå˜é‡ ç›´æŽ¥å¤åˆ¶
+=======
+		//µÚÒ»ÏîµÄµÚÒ»¸ö±äÁ¿ Ö±½Ó¸´ÖÆ
+>>>>>>> origin/mynew
 		root_old = root_old.next;
 		while(root_old.flag == 1){
 			if(root_old.op == '+')
@@ -136,6 +182,7 @@ public class polynomial_method {
 		
 		copy_tmp = copy_tmp.next;
 		coef = copy_tmp.coef;	
+<<<<<<< HEAD
 		copy_tmp.next = new polynomial();	//root_new æœ€åŽä¸€é¡¹çš„ç»ˆæ­¢ç¬¦
 		if(root_old.flag == 1)
 			root_old = root_old.next;
@@ -151,12 +198,33 @@ public class polynomial_method {
 				
 				if(root_old.op != '*'){
 					method.copy(root_old, copy_tmp);	//å¤åˆ¶+ï¼Œ-ç¬¦å·
+=======
+		copy_tmp.next = new polynomial();	//root_new ×îºóÒ»ÏîµÄÖÕÖ¹·û
+		if(root_old.flag == 1)
+			root_old = root_old.next;
+			
+		while(root_old.next.flag != 2){		//root_old»¹Ã»µ½×îºóÒ»Ïî£¬Ñ­»·¼ÌÐø
+			
+			//±éÀúµ½*·ûºÅ²»´¦Àí£¬¶ÔÏÂ¸ö±äÁ¿½øÐÐ¶Ô±È
+			if(root_old.flag == 0){			//Ìø¹ý¸Õ¸´ÖÆµÄ±äÁ¿
+				root_old = root_old.next;
+				continue;
+			}
+			else if(root_old.flag == 1){	//±éÀúÓöµ½+£¬-·ûºÅ£¬Ö±½Ó¸´ÖÆ£¬ÇÒÁ¬Í¬·ûºÅºóµÚÒ»¸ö±äÁ¿Ò»Æð¸´ÖÆ
+				
+				if(root_old.op != '*'){
+					method.copy(root_old, copy_tmp);	//¸´ÖÆ+£¬-·ûºÅ
+>>>>>>> origin/mynew
 					copy_tmp = copy_tmp.next;
 					root_old = root_old.next;
 
 					coef = 1;
 					root_tmp = copy_tmp;
+<<<<<<< HEAD
 					method.copy(root_old, copy_tmp);	//å¤åˆ¶+ï¼Œ-ç¬¦å·åŽç¬¬ä¸€ä¸ªå˜é‡
+=======
+					method.copy(root_old, copy_tmp);	//¸´ÖÆ+£¬-·ûºÅºóµÚÒ»¸ö±äÁ¿
+>>>>>>> origin/mynew
 					copy_tmp = copy_tmp.next;
 					coef *= copy_tmp.coef;
 					copy_tmp.next = new polynomial();
@@ -164,11 +232,19 @@ public class polynomial_method {
 					continue;
 				}
 				else{
+<<<<<<< HEAD
 					if(!method.like_var(root_old, root_tmp)){	//æŸ¥çœ‹æ˜¯å¦æœ‰åŒå˜é‡ï¼šè‹¥æœ‰ï¼ŒæŒ‡æ•°ç›¸åŠ (å‡½æ•°å†…å®Œæˆ)ï¼›è‹¥æ— ï¼Œç›´æŽ¥è¿žæŽ¥
 						method.copy(root_old, copy_tmp);	//è¿žæŽ¥*å·
 						copy_tmp = copy_tmp.next;
 						root_old = root_old.next;
 						method.copy(root_old, copy_tmp);	//è¿žæŽ¥å˜é‡
+=======
+					if(!method.like_var(root_old, root_tmp)){	//²é¿´ÊÇ·ñÓÐÍ¬±äÁ¿£ºÈôÓÐ£¬Ö¸ÊýÏà¼Ó(º¯ÊýÄÚÍê³É)£»ÈôÎÞ£¬Ö±½ÓÁ¬½Ó
+						method.copy(root_old, copy_tmp);	//Á¬½Ó*ºÅ
+						copy_tmp = copy_tmp.next;
+						root_old = root_old.next;
+						method.copy(root_old, copy_tmp);	//Á¬½Ó±äÁ¿
+>>>>>>> origin/mynew
 						copy_tmp = copy_tmp.next;
 						coef = copy_tmp.coef;
 
@@ -190,16 +266,24 @@ public class polynomial_method {
 		polynomial root_new = new polynomial();
 		polynomial_method method = new polynomial_method();
 		polynomial root_tmp = root_new;
+<<<<<<< HEAD
 		boolean flag = false;				//false-æ— åŒç±»é¡¹; true-æœ‰åŒç±»é¡¹
 
 		//ç¬¬ä¸€é¡¹ ç›´æŽ¥å¤åˆ¶
 		while(root_old.next.flag != 2){		//æœªåˆ°ç»“å°¾ï¼Œç»§ç»­å¤åˆ¶
+=======
+		boolean flag = false;				//false-ÎÞÍ¬ÀàÏî; true-ÓÐÍ¬ÀàÏî
+
+		//µÚÒ»Ïî Ö±½Ó¸´ÖÆ
+		while(root_old.next.flag != 2){		//Î´µ½½áÎ²£¬¼ÌÐø¸´ÖÆ
+>>>>>>> origin/mynew
 			root_old = root_old.next;
 
 			method.copy(root_old, root_tmp);
 
 			root_tmp = root_tmp.next;
 			
+<<<<<<< HEAD
 			if(root_old.next.flag == 1)			//é‡åˆ°+ï¼Œ-ç¬¦å·ï¼Œå¤åˆ¶ä¸­æ–­
 				if(root_old.next.op != '*')
 					break;
@@ -212,6 +296,20 @@ public class polynomial_method {
 			root_tmp = root_new;			//æ¯æ¬¡ä»Žroot_newç¬¬ä¸€ä¸ªå¤šé¡¹å¼å¼€å§‹æ¯”è¾ƒ
 
 			//éåŽ†åˆ°+ï¼Œ-ç¬¦å·æˆ–rootèŠ‚ç‚¹ï¼ˆä¸å¤„ç†ï¼‰ï¼Œå¯¹ä¸‹ä¸ªå•é¡¹å¼è¿›è¡Œå¯¹æ¯”
+=======
+			if(root_old.next.flag == 1)			//Óöµ½+£¬-·ûºÅ£¬¸´ÖÆÖÐ¶Ï
+				if(root_old.next.op != '*')
+					break;
+		}
+		root_tmp.next = new polynomial();	//root_new ×îºóÒ»ÏîµÄÖÕÖ¹·û
+
+		
+		while(root_old.next.flag != 2){		//root_old»¹Ã»µ½×îºóÒ»Ïî£¬Ñ­»·¼ÌÐø
+
+			root_tmp = root_new;			//Ã¿´Î´Óroot_newµÚÒ»¸ö¶àÏîÊ½¿ªÊ¼±È½Ï
+
+			//±éÀúµ½+£¬-·ûºÅ»òroot½Úµã£¨²»´¦Àí£©£¬¶ÔÏÂ¸öµ¥ÏîÊ½½øÐÐ¶Ô±È
+>>>>>>> origin/mynew
 			if(root_old.flag == 0){	
 				root_old = root_old.next;
 				continue;
@@ -225,9 +323,15 @@ public class polynomial_method {
 
 			
 			flag = false;
+<<<<<<< HEAD
 			//å°†root_oldçš„ç¬¬ä¸€é¡¹ä¸Žroot_newçš„æ¯ä¸€é¡¹æ¯”å¯¹
 			while(root_tmp.next.flag != 2){	//root_newè¿˜æ²¡åˆ°æœ€åŽä¸€é¡¹ï¼Œå¾ªçŽ¯ç»§ç»­
 				//éåŽ†åˆ°+ï¼Œ-ç¬¦å·æˆ–rootèŠ‚ç‚¹ï¼ˆä¸å¤„ç†ï¼‰ï¼Œå¯¹ä¸‹ä¸ªå•é¡¹å¼è¿›è¡Œå¯¹æ¯”
+=======
+			//½«root_oldµÄµÚÒ»ÏîÓëroot_newµÄÃ¿Ò»Ïî±È¶Ô
+			while(root_tmp.next.flag != 2){	//root_new»¹Ã»µ½×îºóÒ»Ïî£¬Ñ­»·¼ÌÐø
+				//±éÀúµ½+£¬-·ûºÅ»òroot½Úµã£¨²»´¦Àí£©£¬¶ÔÏÂ¸öµ¥ÏîÊ½½øÐÐ¶Ô±È
+>>>>>>> origin/mynew
 				if(root_tmp.flag == 0){	
 					root_tmp = root_tmp.next;
 					continue;
@@ -237,9 +341,15 @@ public class polynomial_method {
 					continue;
 				}
 
+<<<<<<< HEAD
 				if(method.like_term(root_old, root_tmp)){	//æœ‰åŒç±»é¡¹ï¼Œç³»æ•°ç›¸åŠ 
 
 					if(root_old.flag == 2)	//rootèŠ‚ç‚¹
+=======
+				if(method.like_term(root_old, root_tmp)){	//ÓÐÍ¬ÀàÏî£¬ÏµÊýÏà¼Ó
+
+					if(root_old.flag == 2)	//root½Úµã
+>>>>>>> origin/mynew
 						root_tmp.next.coef += root_old.next.coef;
 					else if(root_old.flag == 1 && root_old.op == '+' && (root_tmp.op == '+' || root_tmp.flag == 2) || (root_old.op == '-' && root_tmp.op == '-') )
 						root_tmp.next.coef += root_old.next.coef;
@@ -255,6 +365,7 @@ public class polynomial_method {
 					}
 					
 					flag = true;
+<<<<<<< HEAD
 					root_old = root_old.next;	//è·³è¿‡å½“å‰rootæˆ–+ï¼Œ-èŠ‚ç‚¹
 					break;
 				}
@@ -267,22 +378,47 @@ public class polynomial_method {
 				// å¤„ç†å¥½root/+ï¼Œ-ç¬¦å· ä¸‹é¢å¼€å§‹è¿žæŽ¥å•é¡¹å¼ï¼ˆå•é¡¹å¼å¤åˆ¶ç»“æŸæ ‡å¿—ï¼šå¤šé¡¹å¼ç»“å°¾/é‡åˆ°+ï¼Œ-ç¬¦å·ï¼‰
 
 				while(root_old.next.flag != 2){		//æœªåˆ°ç»“å°¾ï¼Œç»§ç»­å¤åˆ¶
+=======
+					root_old = root_old.next;	//Ìø¹ýµ±Ç°root»ò+£¬-½Úµã
+					break;
+				}
+				root_tmp = root_tmp.next;	//Ìø¹ýµ±Ç°root»ò+£¬-½Úµã
+			}
+			
+			//ÎÞÍ¬ÀàÏî£¬Ö±½ÓÁ¬½Óµ¥ÏîÊ½(root_tmpÎ»ÓÚroot_newÄ©¶Ë)
+			if(flag == false){
+
+				// ´¦ÀíºÃroot/+£¬-·ûºÅ ÏÂÃæ¿ªÊ¼Á¬½Óµ¥ÏîÊ½£¨µ¥ÏîÊ½¸´ÖÆ½áÊø±êÖ¾£º¶àÏîÊ½½áÎ²/Óöµ½+£¬-·ûºÅ£©
+
+				while(root_old.next.flag != 2){		//Î´µ½½áÎ²£¬¼ÌÐø¸´ÖÆ
+>>>>>>> origin/mynew
 
 					method.copy(root_old, root_tmp);
 					
 					root_tmp = root_tmp.next;
 
+<<<<<<< HEAD
 					if(root_old.next.flag == 1)			//é‡åˆ°+ï¼Œ-ç¬¦å·ï¼Œå¤åˆ¶ä¸­æ–­
+=======
+					if(root_old.next.flag == 1)			//Óöµ½+£¬-·ûºÅ£¬¸´ÖÆÖÐ¶Ï
+>>>>>>> origin/mynew
 						if(root_old.next.op != '*')
 							break;
 					root_old = root_old.next;
 										
 				}
 				if(root_old.next.flag == 2){
+<<<<<<< HEAD
 					method.copy(root_old, root_tmp);	//æ ¼å¼åŒ–å¤åˆ¶æœ€åŽä¸€é¡¹
 					root_tmp = root_tmp.next;
 				}
 				root_tmp.next = new polynomial();	//root_new æœ€åŽä¸€é¡¹çš„ç»ˆæ­¢ç¬¦
+=======
+					method.copy(root_old, root_tmp);	//¸ñÊ½»¯¸´ÖÆ×îºóÒ»Ïî
+					root_tmp = root_tmp.next;
+				}
+				root_tmp.next = new polynomial();	//root_new ×îºóÒ»ÏîµÄÖÕÖ¹·û
+>>>>>>> origin/mynew
 			}
 		}
 		return root_new;
@@ -319,7 +455,11 @@ public class polynomial_method {
  		polynomial root_new = new polynomial();
  		polynomial root_tmp = root_new;
  		polynomial_method method = new polynomial_method();
+<<<<<<< HEAD
  		while(root_old.next.flag != 2){	//æ²¡åˆ°æœ€åŽä¸€é¡¹
+=======
+ 		while(root_old.next.flag != 2){	//Ã»µ½×îºóÒ»Ïî
+>>>>>>> origin/mynew
  			if(root_old.next.coef == 0){
  				root_old = root_old.next;
  				while(root_old.flag == 0 || root_old.flag == 1){
@@ -333,10 +473,17 @@ public class polynomial_method {
  				continue;
  			}
  			else{
+<<<<<<< HEAD
  				if(root_tmp == root_new){		//æ–°çš„ç¬¬ä¸€é¡¹ï¼Œå¦‚ä¸ºæ­£ç¬¦å·ä½æˆ–æ ¹èŠ‚ç‚¹ï¼Œè·³è¿‡
  					if(root_old.flag == 1)		//'-'
  						if(root_old.op == '-'){
  		 					method.copy(root_old, root_tmp);	//å¤åˆ¶ç¬¦å·ä½
+=======
+ 				if(root_tmp == root_new){		//ÐÂµÄµÚÒ»Ïî£¬ÈçÎªÕý·ûºÅÎ»»ò¸ù½Úµã£¬Ìø¹ý
+ 					if(root_old.flag == 1)		//'-'
+ 						if(root_old.op == '-'){
+ 		 					method.copy(root_old, root_tmp);	//¸´ÖÆ·ûºÅÎ»
+>>>>>>> origin/mynew
  		 					root_tmp = root_tmp.next;
  		 					root_tmp.next = new polynomial();
  						}
@@ -344,7 +491,11 @@ public class polynomial_method {
  				}
  				
  				else{
+<<<<<<< HEAD
  					method.copy(root_old, root_tmp);	//å¤åˆ¶ç¬¦å·ä½
+=======
+ 					method.copy(root_old, root_tmp);	//¸´ÖÆ·ûºÅÎ»
+>>>>>>> origin/mynew
  					root_tmp = root_tmp.next;
  					root_tmp.next = new polynomial();
  					root_old = root_old.next;
@@ -363,4 +514,7 @@ public class polynomial_method {
  	}
 }
 
+<<<<<<< HEAD
 //B2
+=======
+>>>>>>> origin/mynew
