@@ -298,7 +298,7 @@ public class Polynomial {
 							 }
 						 }	 
 						if (temp.flag == 0) {
-							if (temp.var != "") {
+							if (!temp.var.equals("")) {
 								 if (temp.var.equals(dvar)) { 
 
 									 havevar = true;

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="GBK"?>
+<pmd-cpd>
+   <duplication lines="6" tokens="40">
+      <file line="169" path="D:\Git\lab4\Lab1\src\lab11\Polynomial.java"/>
+      <file line="182" path="D:\Git\lab4\Lab1\src\lab11\Polynomial.java"/>
+      <codefragment><![CDATA[					if (mexponent.find()) {			//鑻ユ湁鎸囨暟
+						String []itemexponent = elmvar.split(strexponent);
+						e = Integer.parseInt(itemexponent[1], 10);
+					} else {
+						e = 1;
+					}]]></codefragment>
+   </duplication>
+   <duplication lines="9" tokens="38">
+      <file line="219" path="D:\Git\lab4\Lab1\src\lab11\Polynomialmethod.java"/>
+      <file line="292" path="D:\Git\lab4\Lab1\src\lab11\Polynomialmethod.java"/>
+      <codefragment><![CDATA[			method.copy(rootold, roottmp);
+
+			roottmp = roottmp.next;
+			
+			if (rootold.next.flag == 1) {
+				if (rootold.next.op != '*') {
+					break;
+				}
+			}]]></codefragment>
+   </duplication>
+   <duplication lines="6" tokens="31">
+      <file line="167" path="D:\Git\lab4\Lab1\src\lab11\Polynomialmethod.java"/>
+      <file line="237" path="D:\Git\lab4\Lab1\src\lab11\Polynomialmethod.java"/>
+      <codefragment><![CDATA[			if (rootold.flag == 0) {			//鐠哄疇绻冮崚姘槻閸掑墎娈戦崣姗�鍣�]]>&#65533;<![CDATA[
+				rootold = rootold.next;
+				continue;
+			} else if (rootold.flag == 1) {	
+				
+				if (rootold.op != '*') {]]></codefragment>
+   </duplication>
+   <duplication lines="3" tokens="27">
+      <file line="262" path="D:\Git\lab4\Lab1\src\lab11\Polynomialmethod.java"/>
+      <file line="264" path="D:\Git\lab4\Lab1\src\lab11\Polynomialmethod.java"/>
+      <codefragment><![CDATA[					if (rootold.flag == 2) {
+						roottmp.next.coef += rootold.next.coef;
+					} else if (rootold.flag == 1 && rootold.op == '+' && (roottmp.op == '+' || roottmp.flag == 2) || (rootold.op == '-' && roottmp.op == '-')) {]]></codefragment>
+   </duplication>
+   <duplication lines="5" tokens="27">
+      <file line="371" path="D:\Git\lab4\Lab1\src\lab11\Polynomialmethod.java"/>
+      <file line="377" path="D:\Git\lab4\Lab1\src\lab11\Polynomialmethod.java"/>
+      <codefragment><![CDATA[ 					} else {
+ 					method.copy(rootold, roottmp);	//婢跺秴鍩楃粭锕�褰挎担锟�]]>&#65533;<![CDATA[
+ 					roottmp = roottmp.next;
+ 					roottmp.next = new Polynomial();
+ 					rootold = rootold.next;]]></codefragment>
+   </duplication>
+</pmd-cpd>

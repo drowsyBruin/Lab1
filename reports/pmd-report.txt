@@ -1,0 +1,406 @@
+src/lab11/Polynomial.java:1:	Possible God class (WMC=54, ATFD=81, TCC=0.0)
+src/lab11/Polynomial.java:2:	No need to import a type that lives in the same package
+src/lab11/Polynomial.java:6:	The class 'Polynomial' has a Cyclomatic Complexity of 8 (Highest = 17).
+src/lab11/Polynomial.java:6:	The class 'Polynomial' has a Modified Cyclomatic Complexity of 8 (Highest = 16).
+src/lab11/Polynomial.java:6:	The class 'Polynomial' has a Standard Cyclomatic Complexity of 8 (Highest = 16).
+src/lab11/Polynomial.java:6:	headerCommentRequirement Required
+src/lab11/Polynomial.java:7:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/lab11/Polynomial.java:7:	To avoid mistakes add a comment at the beginning of the coef field if you want a default access modifier
+src/lab11/Polynomial.java:7:	Use explicit scoping instead of the default package private level
+src/lab11/Polynomial.java:7:	fieldCommentRequirement Required
+src/lab11/Polynomial.java:8:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/lab11/Polynomial.java:8:	To avoid mistakes add a comment at the beginning of the exponent field if you want a default access modifier
+src/lab11/Polynomial.java:8:	Use explicit scoping instead of the default package private level
+src/lab11/Polynomial.java:8:	fieldCommentRequirement Required
+src/lab11/Polynomial.java:9:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/lab11/Polynomial.java:9:	To avoid mistakes add a comment at the beginning of the flag field if you want a default access modifier
+src/lab11/Polynomial.java:9:	Use explicit scoping instead of the default package private level
+src/lab11/Polynomial.java:9:	fieldCommentRequirement Required
+src/lab11/Polynomial.java:10:	Avoid variables with short names like op
+src/lab11/Polynomial.java:10:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/lab11/Polynomial.java:10:	To avoid mistakes add a comment at the beginning of the op field if you want a default access modifier
+src/lab11/Polynomial.java:10:	Use explicit scoping instead of the default package private level
+src/lab11/Polynomial.java:10:	fieldCommentRequirement Required
+src/lab11/Polynomial.java:11:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/lab11/Polynomial.java:11:	To avoid mistakes add a comment at the beginning of the var field if you want a default access modifier
+src/lab11/Polynomial.java:11:	Use explicit scoping instead of the default package private level
+src/lab11/Polynomial.java:11:	fieldCommentRequirement Required
+src/lab11/Polynomial.java:12:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/lab11/Polynomial.java:12:	To avoid mistakes add a comment at the beginning of the next field if you want a default access modifier
+src/lab11/Polynomial.java:12:	Use explicit scoping instead of the default package private level
+src/lab11/Polynomial.java:12:	fieldCommentRequirement Required
+src/lab11/Polynomial.java:31:	Avoid variables with short names like o
+src/lab11/Polynomial.java:36:	Comment is too large: Too many lines
+src/lab11/Polynomial.java:45:	Avoid variables with short names like c
+src/lab11/Polynomial.java:45:	Avoid variables with short names like e
+src/lab11/Polynomial.java:45:	Avoid variables with short names like v
+src/lab11/Polynomial.java:59:	The method 'display' has a Cyclomatic Complexity of 15.
+src/lab11/Polynomial.java:59:	The method 'display' has a Modified Cyclomatic Complexity of 15.
+src/lab11/Polynomial.java:59:	The method 'display' has a Standard Cyclomatic Complexity of 15.
+src/lab11/Polynomial.java:60:	Avoid declaring a variable if it is unreferenced before a possible exit point.
+src/lab11/Polynomial.java:60:	Avoid variables with short names like df
+src/lab11/Polynomial.java:60:	Found 'DU'-anomaly for variable 'df' (lines '60'-'111').
+src/lab11/Polynomial.java:60:	Local variable 'df' could be declared final
+src/lab11/Polynomial.java:68:	Avoid using Literals in Conditional Statements
+src/lab11/Polynomial.java:69:	Position literals first in String comparisons
+src/lab11/Polynomial.java:69:	Potential violation of Law of Demeter (static property access)
+src/lab11/Polynomial.java:69:	These nested if statements could be combined
+src/lab11/Polynomial.java:70:	Avoid using Literals in Conditional Statements
+src/lab11/Polynomial.java:70:	These nested if statements could be combined
+src/lab11/Polynomial.java:71:	Avoid using Literals in Conditional Statements
+src/lab11/Polynomial.java:71:	Deeply nested if..then statements are hard to read
+src/lab11/Polynomial.java:81:	Position literals first in String comparisons
+src/lab11/Polynomial.java:81:	Potential violation of Law of Demeter (static property access)
+src/lab11/Polynomial.java:82:	Potential violation of Law of Demeter (object not created locally)
+src/lab11/Polynomial.java:82:	System.out.print is used
+src/lab11/Polynomial.java:85:	Avoid using Literals in Conditional Statements
+src/lab11/Polynomial.java:86:	Avoid using Literals in Conditional Statements
+src/lab11/Polynomial.java:87:	System.out.print is used
+src/lab11/Polynomial.java:89:	System.out.print is used
+src/lab11/Polynomial.java:91:	Potential violation of Law of Demeter (object not created locally)
+src/lab11/Polynomial.java:91:	System.out.print is used
+src/lab11/Polynomial.java:94:	Avoid using Literals in Conditional Statements
+src/lab11/Polynomial.java:95:	System.out.print is used
+src/lab11/Polynomial.java:97:	System.out.print is used
+src/lab11/Polynomial.java:100:	Potential violation of Law of Demeter (object not created locally)
+src/lab11/Polynomial.java:100:	System.out.print is used
+src/lab11/Polynomial.java:105:	Avoid using Literals in Conditional Statements
+src/lab11/Polynomial.java:106:	System.out.print is used
+src/lab11/Polynomial.java:120:	Found 'UR'-anomaly for variable 'elmitem' (lines '120'-'146').
+src/lab11/Polynomial.java:120:	Found 'UR'-anomaly for variable 'elmvar' (lines '120'-'152').
+src/lab11/Polynomial.java:120:	The method 'expression' has a Cyclomatic Complexity of 14.
+src/lab11/Polynomial.java:120:	The method 'expression' has a Modified Cyclomatic Complexity of 14.
+src/lab11/Polynomial.java:120:	The method 'expression' has a Standard Cyclomatic Complexity of 14.
+src/lab11/Polynomial.java:120:	The method expression() has an NPath complexity of 985
+src/lab11/Polynomial.java:122:	Local variable 'rootnew' could be declared final
+src/lab11/Polynomial.java:123:	Local variable 'strpd' could be declared final
+src/lab11/Polynomial.java:124:	Local variable 'ppd' could be declared final
+src/lab11/Polynomial.java:125:	Local variable 'item' could be declared final
+src/lab11/Polynomial.java:126:	Local variable 'mpd' could be declared final
+src/lab11/Polynomial.java:126:	Potential violation of Law of Demeter (object not created locally)
+src/lab11/Polynomial.java:128:	Local variable 'strmul' could be declared final
+src/lab11/Polynomial.java:129:	Local variable 'pmul' could be declared final
+src/lab11/Polynomial.java:131:	Local variable 'strcoef' could be declared final
+src/lab11/Polynomial.java:132:	Local variable 'pcoef' could be declared final
+src/lab11/Polynomial.java:133:	Local variable 'strvar' could be declared final
+src/lab11/Polynomial.java:134:	Local variable 'pvar' could be declared final
+src/lab11/Polynomial.java:135:	Local variable 'strexponent' could be declared final
+src/lab11/Polynomial.java:136:	Local variable 'pexponent' could be declared final
+src/lab11/Polynomial.java:138:	Avoid variables with short names like c
+src/lab11/Polynomial.java:139:	Avoid variables with short names like e
+src/lab11/Polynomial.java:141:	Avoid variables with short names like v
+src/lab11/Polynomial.java:144:	Local variable 'elmitem' could be declared final
+src/lab11/Polynomial.java:145:	Found 'DD'-anomaly for variable 'nummul' (lines '145'-'149').
+src/lab11/Polynomial.java:146:	Local variable 'var' could be declared final
+src/lab11/Polynomial.java:146:	Potential violation of Law of Demeter (object not created locally)
+src/lab11/Polynomial.java:147:	Local variable 'mmul' could be declared final
+src/lab11/Polynomial.java:147:	Potential violation of Law of Demeter (object not created locally)
+src/lab11/Polynomial.java:148:	Potential violation of Law of Demeter (object not created locally)
+src/lab11/Polynomial.java:149:	Found 'DD'-anomaly for variable 'nummul' (lines '149'-'149').
+src/lab11/Polynomial.java:149:	Found 'DD'-anomaly for variable 'nummul' (lines '149'-'154').
+src/lab11/Polynomial.java:151:	Local variable 'elmvar' could be declared final
+src/lab11/Polynomial.java:152:	Local variable 'mvar' could be declared final
+src/lab11/Polynomial.java:152:	Potential violation of Law of Demeter (object not created locally)
+src/lab11/Polynomial.java:153:	Potential violation of Law of Demeter (object not created locally)
+src/lab11/Polynomial.java:154:	Found 'DD'-anomaly for variable 'nummul' (lines '154'-'154').
+src/lab11/Polynomial.java:157:	Local variable 'elmvar' could be declared final
+src/lab11/Polynomial.java:158:	Local variable 'mcoef' could be declared final
+src/lab11/Polynomial.java:158:	Potential violation of Law of Demeter (object not created locally)
+src/lab11/Polynomial.java:159:	Local variable 'mexponent' could be declared final
+src/lab11/Polynomial.java:159:	Potential violation of Law of Demeter (object not created locally)
+src/lab11/Polynomial.java:160:	Potential violation of Law of Demeter (object not created locally)
+src/lab11/Polynomial.java:161:	Potential violation of Law of Demeter (object not created locally)
+src/lab11/Polynomial.java:164:	Local variable 'mvar' could be declared final
+src/lab11/Polynomial.java:164:	Potential violation of Law of Demeter (object not created locally)
+src/lab11/Polynomial.java:165:	Potential violation of Law of Demeter (object not created locally)
+src/lab11/Polynomial.java:166:	Potential violation of Law of Demeter (object not created locally)
+src/lab11/Polynomial.java:169:	Potential violation of Law of Demeter (object not created locally)
+src/lab11/Polynomial.java:170:	Local variable 'itemexponent' could be declared final
+src/lab11/Polynomial.java:170:	Potential violation of Law of Demeter (object not created locally)
+src/lab11/Polynomial.java:171:	Potential violation of Law of Demeter (method chain calls)
+src/lab11/Polynomial.java:176:	Avoid using Literals in Conditional Statements
+src/lab11/Polynomial.java:177:	Found 'DD'-anomaly for variable 'coef' (lines '177'-'175').
+src/lab11/Polynomial.java:182:	Potential violation of Law of Demeter (object not created locally)
+src/lab11/Polynomial.java:183:	Local variable 'itemexponent' could be declared final
+src/lab11/Polynomial.java:183:	Potential violation of Law of Demeter (object not created locally)
+src/lab11/Polynomial.java:184:	Potential violation of Law of Demeter (method chain calls)
+src/lab11/Polynomial.java:188:	Avoid instantiating new objects inside loops
+src/lab11/Polynomial.java:192:	Avoid instantiating new objects inside loops
+src/lab11/Polynomial.java:193:	Found 'DD'-anomaly for variable 'nummul' (lines '193'-'145').
+src/lab11/Polynomial.java:193:	Found 'DU'-anomaly for variable 'nummul' (lines '193'-'213').
+src/lab11/Polynomial.java:197:	Use equals() to compare object references.
+src/lab11/Polynomial.java:198:	Avoid instantiating new objects inside loops
+src/lab11/Polynomial.java:203:	Found 'DU'-anomaly for variable 'coef' (lines '203'-'213').
+src/lab11/Polynomial.java:205:	Potential violation of Law of Demeter (object not created locally)
+src/lab11/Polynomial.java:206:	Avoid instantiating new objects inside loops
+src/lab11/Polynomial.java:206:	Potential violation of Law of Demeter (method chain calls)
+src/lab11/Polynomial.java:206:	Potential violation of Law of Demeter (object not created locally)
+src/lab11/Polynomial.java:209:	Found 'DU'-anomaly for variable 'tmpcoef' (lines '209'-'213').
+src/lab11/Polynomial.java:211:	Local variable 'method' could be declared final
+src/lab11/Polynomial.java:226:	Local variable 'method' could be declared final
+src/lab11/Polynomial.java:227:	Local variable 'count' could be declared final
+src/lab11/Polynomial.java:228:	Local variable 'num' could be declared final
+src/lab11/Polynomial.java:229:	Found 'DD'-anomaly for variable 'svar' (lines '229'-'232').
+src/lab11/Polynomial.java:229:	Found 'DU'-anomaly for variable 'svar' (lines '229'-'266').
+src/lab11/Polynomial.java:230:	Found 'DD'-anomaly for variable 'value' (lines '230'-'236').
+src/lab11/Polynomial.java:230:	Found 'DU'-anomaly for variable 'value' (lines '230'-'266').
+src/lab11/Polynomial.java:232:	Potential violation of Law of Demeter (method chain calls)
+src/lab11/Polynomial.java:232:	Potential violation of Law of Demeter (object not created locally)
+src/lab11/Polynomial.java:233:	Local variable 'len' could be declared final
+src/lab11/Polynomial.java:233:	Potential violation of Law of Demeter (method chain calls)
+src/lab11/Polynomial.java:233:	Potential violation of Law of Demeter (method chain calls)
+src/lab11/Polynomial.java:234:	Avoid variables with short names like n
+src/lab11/Polynomial.java:234:	Local variable 'n' could be declared final
+src/lab11/Polynomial.java:234:	Potential violation of Law of Demeter (method chain calls)
+src/lab11/Polynomial.java:234:	Potential violation of Law of Demeter (method chain calls)
+src/lab11/Polynomial.java:234:	Potential violation of Law of Demeter (method chain calls)
+src/lab11/Polynomial.java:234:	Potential violation of Law of Demeter (method chain calls)
+src/lab11/Polynomial.java:234:	Potential violation of Law of Demeter (method chain calls)
+src/lab11/Polynomial.java:234:	Potential violation of Law of Demeter (method chain calls)
+src/lab11/Polynomial.java:235:	Avoid variables with short names like v
+src/lab11/Polynomial.java:235:	Local variable 'v' could be declared final
+src/lab11/Polynomial.java:236:	Found 'DD'-anomaly for variable 'value' (lines '236'-'236').
+src/lab11/Polynomial.java:236:	Found 'DU'-anomaly for variable 'value' (lines '236'-'266').
+src/lab11/Polynomial.java:238:	Found 'DD'-anomaly for variable 'havevar' (lines '238'-'245').
+src/lab11/Polynomial.java:244:	Potential violation of Law of Demeter (method chain calls)
+src/lab11/Polynomial.java:244:	Potential violation of Law of Demeter (static property access)
+src/lab11/Polynomial.java:246:	Avoid using Literals in Conditional Statements
+src/lab11/Polynomial.java:251:	Potential violation of Law of Demeter (method chain calls)
+src/lab11/Polynomial.java:262:	System.out.println is used
+src/lab11/Polynomial.java:265:	Potential violation of Law of Demeter (object not created locally)
+src/lab11/Polynomial.java:277:	The method 'diff' has a Cyclomatic Complexity of 17.
+src/lab11/Polynomial.java:277:	The method 'diff' has a Modified Cyclomatic Complexity of 16.
+src/lab11/Polynomial.java:277:	The method 'diff' has a Standard Cyclomatic Complexity of 16.
+src/lab11/Polynomial.java:277:	The method diff() has an NPath complexity of 214
+src/lab11/Polynomial.java:280:	Local variable 'method' could be declared final
+src/lab11/Polynomial.java:281:	Found 'DD'-anomaly for variable 'tra' (lines '281'-'319').
+src/lab11/Polynomial.java:282:	Local variable 'count' could be declared final
+src/lab11/Polynomial.java:283:	Local variable 'len' could be declared final
+src/lab11/Polynomial.java:284:	Found 'DD'-anomaly for variable 'havevar' (lines '284'-'291').
+src/lab11/Polynomial.java:285:	Found 'DD'-anomaly for variable 'havev' (lines '285'-'305').
+src/lab11/Polynomial.java:286:	Avoid using Literals in Conditional Statements
+src/lab11/Polynomial.java:287:	Potential violation of Law of Demeter (method chain calls)
+src/lab11/Polynomial.java:287:	Potential violation of Law of Demeter (method chain calls)
+src/lab11/Polynomial.java:288:	Found 'DU'-anomaly for variable 'dvar' (lines '288'-'350').
+src/lab11/Polynomial.java:288:	Local variable 'dvar' could be declared final
+src/lab11/Polynomial.java:291:	Found 'DD'-anomaly for variable 'havevar' (lines '291'-'304').
+src/lab11/Polynomial.java:295:	Avoid using Literals in Conditional Statements
+src/lab11/Polynomial.java:296:	These nested if statements could be combined
+src/lab11/Polynomial.java:301:	Position literals first in String comparisons
+src/lab11/Polynomial.java:301:	Potential violation of Law of Demeter (static property access)
+src/lab11/Polynomial.java:301:	These nested if statements could be combined
+src/lab11/Polynomial.java:302:	Potential violation of Law of Demeter (static property access)
+src/lab11/Polynomial.java:302:	These nested if statements could be combined
+src/lab11/Polynomial.java:304:	Found 'DD'-anomaly for variable 'havevar' (lines '304'-'304').
+src/lab11/Polynomial.java:305:	Found 'DD'-anomaly for variable 'havev' (lines '305'-'305').
+src/lab11/Polynomial.java:306:	Avoid using Literals in Conditional Statements
+src/lab11/Polynomial.java:319:	Found 'DD'-anomaly for variable 'tra' (lines '319'-'319').
+src/lab11/Polynomial.java:319:	Found 'DU'-anomaly for variable 'tra' (lines '319'-'350').
+src/lab11/Polynomial.java:320:	Avoid using Literals in Conditional Statements
+src/lab11/Polynomial.java:325:	Avoid using Literals in Conditional Statements
+src/lab11/Polynomial.java:340:	System.out.println is used
+src/lab11/Polynomial.java:343:	System.out.println is used
+src/lab11/Polynomial.java:346:	System.out.println is used
+src/lab11/Polynomial.java:349:	Potential violation of Law of Demeter (object not created locally)
+src/lab11/Polynomialmethod.java:1:	Possible God class (WMC=91, ATFD=150, TCC=0.0)
+src/lab11/Polynomialmethod.java:9:	Each class should declare at least one constructor
+src/lab11/Polynomialmethod.java:9:	The class 'Polynomialmethod' has a Cyclomatic Complexity of 10 (Highest = 33).
+src/lab11/Polynomialmethod.java:9:	The class 'Polynomialmethod' has a Modified Cyclomatic Complexity of 8 (Highest = 23).
+src/lab11/Polynomialmethod.java:9:	The class 'Polynomialmethod' has a Standard Cyclomatic Complexity of 8 (Highest = 23).
+src/lab11/Polynomialmethod.java:11:	publicMethodCommentRequirement Required
+src/lab11/Polynomialmethod.java:12:	Avoid variables with short names like c
+src/lab11/Polynomialmethod.java:13:	Avoid variables with short names like e
+src/lab11/Polynomialmethod.java:14:	Avoid variables with short names like op
+src/lab11/Polynomialmethod.java:21:	Avoid using Literals in Conditional Statements
+src/lab11/Polynomialmethod.java:32:	Avoid reassigning parameters such as 'root2'
+src/lab11/Polynomialmethod.java:32:	publicMethodCommentRequirement Required
+src/lab11/Polynomialmethod.java:33:	Found 'DU'-anomaly for variable 'var' (lines '33'-'54').
+src/lab11/Polynomialmethod.java:33:	Local variable 'var' could be declared final
+src/lab11/Polynomialmethod.java:37:	Avoid using Literals in Conditional Statements
+src/lab11/Polynomialmethod.java:38:	Avoid if (x != y) ..; else ..;
+src/lab11/Polynomialmethod.java:38:	Avoid using Literals in Conditional Statements
+src/lab11/Polynomialmethod.java:46:	Potential violation of Law of Demeter (static property access)
+src/lab11/Polynomialmethod.java:47:	Avoid using if statements without curly braces
+src/lab11/Polynomialmethod.java:47:	Position literals first in String comparisons
+src/lab11/Polynomialmethod.java:47:	Potential violation of Law of Demeter (object not created locally)
+src/lab11/Polynomialmethod.java:50:	A method should have only one exit point, and that should be the last statement in the method
+src/lab11/Polynomialmethod.java:56:	The method 'liketerm' has a Cyclomatic Complexity of 17.
+src/lab11/Polynomialmethod.java:56:	The method 'liketerm' has a Modified Cyclomatic Complexity of 14.
+src/lab11/Polynomialmethod.java:56:	The method 'liketerm' has a Standard Cyclomatic Complexity of 14.
+src/lab11/Polynomialmethod.java:56:	The method liketerm() has an NPath complexity of 992
+src/lab11/Polynomialmethod.java:56:	publicMethodCommentRequirement Required
+src/lab11/Polynomialmethod.java:77:	Avoid if (x != y) ..; else ..;
+src/lab11/Polynomialmethod.java:78:	A method should have only one exit point, and that should be the last statement in the method
+src/lab11/Polynomialmethod.java:81:	Use one line for each declaration, it enhances code readability.
+src/lab11/Polynomialmethod.java:82:	Use one line for each declaration, it enhances code readability.
+src/lab11/Polynomialmethod.java:83:	Found 'DD'-anomaly for variable 'flag' (lines '83'-'112').
+src/lab11/Polynomialmethod.java:83:	Found 'DU'-anomaly for variable 'flag' (lines '83'-'124').
+src/lab11/Polynomialmethod.java:86:	Avoid using Literals in Conditional Statements
+src/lab11/Polynomialmethod.java:87:	Avoid using Literals in Conditional Statements
+src/lab11/Polynomialmethod.java:95:	Found 'DD'-anomaly for variable 'var1' (lines '95'-'95').
+src/lab11/Polynomialmethod.java:95:	Found 'DU'-anomaly for variable 'var1' (lines '95'-'124').
+src/lab11/Polynomialmethod.java:96:	Found 'DD'-anomaly for variable 'exponent1' (lines '96'-'96').
+src/lab11/Polynomialmethod.java:96:	Found 'DU'-anomaly for variable 'exponent1' (lines '96'-'124').
+src/lab11/Polynomialmethod.java:101:	Avoid using Literals in Conditional Statements
+src/lab11/Polynomialmethod.java:102:	Avoid using Literals in Conditional Statements
+src/lab11/Polynomialmethod.java:111:	Potential violation of Law of Demeter (object not created locally)
+src/lab11/Polynomialmethod.java:117:	A method should have only one exit point, and that should be the last statement in the method
+src/lab11/Polynomialmethod.java:119:	Found 'DD'-anomaly for variable 'flag' (lines '119'-'112').
+src/lab11/Polynomialmethod.java:119:	Found 'DU'-anomaly for variable 'flag' (lines '119'-'124').
+src/lab11/Polynomialmethod.java:126:	Avoid reassigning parameters such as 'rootold'
+src/lab11/Polynomialmethod.java:126:	Avoid reassigning parameters such as 'rootold'
+src/lab11/Polynomialmethod.java:126:	Avoid reassigning parameters such as 'rootold'
+src/lab11/Polynomialmethod.java:126:	Avoid reassigning parameters such as 'rootold'
+src/lab11/Polynomialmethod.java:126:	Avoid reassigning parameters such as 'rootold'
+src/lab11/Polynomialmethod.java:126:	Avoid reassigning parameters such as 'rootold'
+src/lab11/Polynomialmethod.java:126:	Avoid reassigning parameters such as 'rootold'
+src/lab11/Polynomialmethod.java:126:	Avoid reassigning parameters such as 'rootold'
+src/lab11/Polynomialmethod.java:126:	Avoid reassigning parameters such as 'rootold'
+src/lab11/Polynomialmethod.java:126:	Avoid reassigning parameters such as 'rootold'
+src/lab11/Polynomialmethod.java:126:	The method 'mergevar' has a Cyclomatic Complexity of 12.
+src/lab11/Polynomialmethod.java:126:	The method 'mergevar' has a Modified Cyclomatic Complexity of 12.
+src/lab11/Polynomialmethod.java:126:	The method 'mergevar' has a Standard Cyclomatic Complexity of 12.
+src/lab11/Polynomialmethod.java:126:	publicMethodCommentRequirement Required
+src/lab11/Polynomialmethod.java:127:	Local variable 'rootnew' could be declared final
+src/lab11/Polynomialmethod.java:128:	Local variable 'method' could be declared final
+src/lab11/Polynomialmethod.java:136:	Avoid using Literals in Conditional Statements
+src/lab11/Polynomialmethod.java:143:	Potential violation of Law of Demeter (object not created locally)
+src/lab11/Polynomialmethod.java:155:	Potential violation of Law of Demeter (object not created locally)
+src/lab11/Polynomialmethod.java:158:	Found 'DD'-anomaly for variable 'coef' (lines '158'-'177').
+src/lab11/Polynomialmethod.java:158:	Found 'DD'-anomaly for variable 'coef' (lines '158'-'192').
+src/lab11/Polynomialmethod.java:158:	Found 'DU'-anomaly for variable 'coef' (lines '158'-'207').
+src/lab11/Polynomialmethod.java:160:	Avoid using Literals in Conditional Statements
+src/lab11/Polynomialmethod.java:170:	Avoid using Literals in Conditional Statements
+src/lab11/Polynomialmethod.java:172:	Avoid if (x != y) ..; else ..;
+src/lab11/Polynomialmethod.java:172:	Avoid using Literals in Conditional Statements
+src/lab11/Polynomialmethod.java:173:	Potential violation of Law of Demeter (object not created locally)
+src/lab11/Polynomialmethod.java:178:	Found 'DD'-anomaly for variable 'roottmp' (lines '178'-'178').
+src/lab11/Polynomialmethod.java:178:	Found 'DU'-anomaly for variable 'roottmp' (lines '178'-'207').
+src/lab11/Polynomialmethod.java:179:	Potential violation of Law of Demeter (object not created locally)
+src/lab11/Polynomialmethod.java:182:	Avoid instantiating new objects inside loops
+src/lab11/Polynomialmethod.java:186:	Potential violation of Law of Demeter (object not created locally)
+src/lab11/Polynomialmethod.java:187:	Potential violation of Law of Demeter (object not created locally)
+src/lab11/Polynomialmethod.java:190:	Potential violation of Law of Demeter (object not created locally)
+src/lab11/Polynomialmethod.java:196:	Avoid instantiating new objects inside loops
+src/lab11/Polynomialmethod.java:198:	Avoid using Literals in Conditional Statements
+src/lab11/Polynomialmethod.java:209:	Avoid really long methods.
+src/lab11/Polynomialmethod.java:209:	Avoid reassigning parameters such as 'rootold'
+src/lab11/Polynomialmethod.java:209:	Avoid reassigning parameters such as 'rootold'
+src/lab11/Polynomialmethod.java:209:	Avoid reassigning parameters such as 'rootold'
+src/lab11/Polynomialmethod.java:209:	Avoid reassigning parameters such as 'rootold'
+src/lab11/Polynomialmethod.java:209:	Avoid reassigning parameters such as 'rootold'
+src/lab11/Polynomialmethod.java:209:	The method 'mergeterm' has a Cyclomatic Complexity of 33.
+src/lab11/Polynomialmethod.java:209:	The method 'mergeterm' has a Modified Cyclomatic Complexity of 23.
+src/lab11/Polynomialmethod.java:209:	The method 'mergeterm' has a Standard Cyclomatic Complexity of 23.
+src/lab11/Polynomialmethod.java:209:	The method mergeterm() has an NPath complexity of 42916
+src/lab11/Polynomialmethod.java:209:	publicMethodCommentRequirement Required
+src/lab11/Polynomialmethod.java:210:	Local variable 'rootnew' could be declared final
+src/lab11/Polynomialmethod.java:211:	Local variable 'method' could be declared final
+src/lab11/Polynomialmethod.java:213:	Found 'DD'-anomaly for variable 'flag' (lines '213'-'248').
+src/lab11/Polynomialmethod.java:223:	Avoid using Literals in Conditional Statements
+src/lab11/Polynomialmethod.java:224:	Avoid using Literals in Conditional Statements
+src/lab11/Polynomialmethod.java:224:	These nested if statements could be combined
+src/lab11/Polynomialmethod.java:240:	Avoid using Literals in Conditional Statements
+src/lab11/Polynomialmethod.java:241:	Avoid using Literals in Conditional Statements
+src/lab11/Polynomialmethod.java:241:	These nested if statements could be combined
+src/lab11/Polynomialmethod.java:248:	Found 'DD'-anomaly for variable 'flag' (lines '248'-'278').
+src/lab11/Polynomialmethod.java:255:	Avoid using Literals in Conditional Statements
+src/lab11/Polynomialmethod.java:262:	Avoid using Literals in Conditional Statements
+src/lab11/Polynomialmethod.java:264:	Useless parentheses.
+src/lab11/Polynomialmethod.java:266:	Useless parentheses.
+src/lab11/Polynomialmethod.java:269:	System.out.println is used
+src/lab11/Polynomialmethod.java:272:	Avoid using Literals in Conditional Statements
+src/lab11/Polynomialmethod.java:272:	These nested if statements could be combined
+src/lab11/Polynomialmethod.java:286:	Avoid unnecessary comparisons in boolean expressions
+src/lab11/Polynomialmethod.java:288:	Comment is too large: Line too long
+src/lab11/Polynomialmethod.java:296:	Avoid using Literals in Conditional Statements
+src/lab11/Polynomialmethod.java:297:	Avoid using Literals in Conditional Statements
+src/lab11/Polynomialmethod.java:297:	These nested if statements could be combined
+src/lab11/Polynomialmethod.java:304:	Avoid using Literals in Conditional Statements
+src/lab11/Polynomialmethod.java:308:	Avoid instantiating new objects inside loops
+src/lab11/Polynomialmethod.java:314:	Avoid variables with short names like a
+src/lab11/Polynomialmethod.java:314:	publicMethodCommentRequirement Required
+src/lab11/Polynomialmethod.java:315:	Avoid unnecessary if..then..else statements when returning booleans
+src/lab11/Polynomialmethod.java:316:	A method should have only one exit point, and that should be the last statement in the method
+src/lab11/Polynomialmethod.java:322:	Avoid variables with short names like i
+src/lab11/Polynomialmethod.java:322:	publicMethodCommentRequirement Required
+src/lab11/Polynomialmethod.java:323:	Avoid variables with short names like j
+src/lab11/Polynomialmethod.java:329:	publicMethodCommentRequirement Required
+src/lab11/Polynomialmethod.java:332:	Found 'DD'-anomaly for variable 'rootnew' (lines '332'-'334').
+src/lab11/Polynomialmethod.java:341:	Avoid reassigning parameters such as 'rootold'
+src/lab11/Polynomialmethod.java:341:	Avoid reassigning parameters such as 'rootold'
+src/lab11/Polynomialmethod.java:341:	Avoid reassigning parameters such as 'rootold'
+src/lab11/Polynomialmethod.java:341:	Avoid reassigning parameters such as 'rootold'
+src/lab11/Polynomialmethod.java:341:	Avoid reassigning parameters such as 'rootold'
+src/lab11/Polynomialmethod.java:341:	The method 'clear' has a Cyclomatic Complexity of 13.
+src/lab11/Polynomialmethod.java:341:	The method 'clear' has a Modified Cyclomatic Complexity of 12.
+src/lab11/Polynomialmethod.java:341:	The method 'clear' has a Standard Cyclomatic Complexity of 12.
+src/lab11/Polynomialmethod.java:341:	publicMethodCommentRequirement Required
+src/lab11/Polynomialmethod.java:342:	Local variable 'rootnew' could be declared final
+src/lab11/Polynomialmethod.java:343:	Found 'DU'-anomaly for variable 'roottmp' (lines '343'-'390').
+src/lab11/Polynomialmethod.java:344:	Found 'DU'-anomaly for variable 'method' (lines '344'-'390').
+src/lab11/Polynomialmethod.java:344:	Local variable 'method' could be declared final
+src/lab11/Polynomialmethod.java:349:	Avoid using Literals in Conditional Statements
+src/lab11/Polynomialmethod.java:350:	Avoid using Literals in Conditional Statements
+src/lab11/Polynomialmethod.java:350:	These nested if statements could be combined
+src/lab11/Polynomialmethod.java:356:	Avoid using Literals in Conditional Statements
+src/lab11/Polynomialmethod.java:361:	Use equals() to compare object references.
+src/lab11/Polynomialmethod.java:362:	Avoid using Literals in Conditional Statements
+src/lab11/Polynomialmethod.java:365:	Avoid using Literals in Conditional Statements
+src/lab11/Polynomialmethod.java:366:	Potential violation of Law of Demeter (object not created locally)
+src/lab11/Polynomialmethod.java:368:	Avoid instantiating new objects inside loops
+src/lab11/Polynomialmethod.java:372:	Potential violation of Law of Demeter (object not created locally)
+src/lab11/Polynomialmethod.java:374:	Avoid instantiating new objects inside loops
+src/lab11/Polynomialmethod.java:378:	Potential violation of Law of Demeter (object not created locally)
+src/lab11/Polynomialmethod.java:380:	Avoid instantiating new objects inside loops
+src/lab11/Polynomialmethod.java:382:	Avoid using Literals in Conditional Statements
+src/lab11/Polynomialmethod.java:383:	A method should have only one exit point, and that should be the last statement in the method
+src/lab11/Test.java:2:	No need to import a type that lives in the same package
+src/lab11/Test.java:9:	All methods are static.  Consider using a utility class instead. Alternatively, you could add a private constructor or make the class abstract to silence this warning.
+src/lab11/Test.java:9:	Avoid short class names like Test
+src/lab11/Test.java:9:	headerCommentRequirement Required
+src/lab11/Test.java:12:	publicMethodCommentRequirement Required
+src/lab11/Test.java:13:	Avoid variables with short names like br
+src/lab11/Test.java:13:	Local variable 'br' could be declared final
+src/lab11/Test.java:14:	Found 'DD'-anomaly for variable 'str' (lines '14'-'22').
+src/lab11/Test.java:15:	Local variable 'strsimplify' could be declared final
+src/lab11/Test.java:16:	Local variable 'strdiff' could be declared final
+src/lab11/Test.java:17:	Found 'DU'-anomaly for variable 'psimplify' (lines '17'-'55').
+src/lab11/Test.java:17:	Local variable 'psimplify' could be declared final
+src/lab11/Test.java:18:	Found 'DU'-anomaly for variable 'pdiff' (lines '18'-'55').
+src/lab11/Test.java:18:	Local variable 'pdiff' could be declared final
+src/lab11/Test.java:19:	Found 'DD'-anomaly for variable 'root' (lines '19'-'33').
+src/lab11/Test.java:19:	Found 'DD'-anomaly for variable 'root' (lines '19'-'42').
+src/lab11/Test.java:19:	Found 'DD'-anomaly for variable 'root' (lines '19'-'48').
+src/lab11/Test.java:19:	Found 'DU'-anomaly for variable 'root' (lines '19'-'55').
+src/lab11/Test.java:21:	System.out.print is used
+src/lab11/Test.java:22:	Potential violation of Law of Demeter (object not created locally)
+src/lab11/Test.java:24:	A method should have only one exit point, and that should be the last statement in the method
+src/lab11/Test.java:26:	Local variable 'msimplify' could be declared final
+src/lab11/Test.java:26:	Potential violation of Law of Demeter (object not created locally)
+src/lab11/Test.java:27:	Found 'DD'-anomaly for variable 'mdiff' (lines '27'-'27').
+src/lab11/Test.java:27:	Found 'DU'-anomaly for variable 'mdiff' (lines '27'-'55').
+src/lab11/Test.java:27:	Local variable 'mdiff' could be declared final
+src/lab11/Test.java:27:	Potential violation of Law of Demeter (object not created locally)
+src/lab11/Test.java:28:	Potential violation of Law of Demeter (object not created locally)
+src/lab11/Test.java:29:	Position literals first in String comparisons
+src/lab11/Test.java:29:	Potential violation of Law of Demeter (object not created locally)
+src/lab11/Test.java:30:	Potential violation of Law of Demeter (object not created locally)
+src/lab11/Test.java:31:	System.out.println is used
+src/lab11/Test.java:33:	Potential violation of Law of Demeter (object not created locally)
+src/lab11/Test.java:34:	Potential violation of Law of Demeter (object not created locally)
+src/lab11/Test.java:35:	System.out.println is used
+src/lab11/Test.java:38:	Potential violation of Law of Demeter (object not created locally)
+src/lab11/Test.java:39:	Position literals first in String comparisons
+src/lab11/Test.java:39:	Potential violation of Law of Demeter (object not created locally)
+src/lab11/Test.java:40:	System.out.println is used
+src/lab11/Test.java:42:	Potential violation of Law of Demeter (object not created locally)
+src/lab11/Test.java:43:	Potential violation of Law of Demeter (object not created locally)
+src/lab11/Test.java:44:	System.out.println is used
+src/lab11/Test.java:47:	Potential violation of Law of Demeter (object not created locally)
+src/lab11/Test.java:48:	Potential violation of Law of Demeter (object not created locally)
+src/lab11/Test.java:49:	Potential violation of Law of Demeter (object not created locally)
+src/lab11/Test.java:50:	System.out.println is used
+src/lab11/Test.java:52:	Position literals first in String comparisons
+src/lab11/Test.java:52:	Potential violation of Law of Demeter (object not created locally)
+src/lab11/Test.java:54:	Avoid unnecessary return statements
