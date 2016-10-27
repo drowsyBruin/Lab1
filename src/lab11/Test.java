@@ -32,7 +32,7 @@ public class Test { //
 				} else {
 					root = root.simplify(str, root);
 					root.display();	
-					//System.out.println("");
+					System.out.println("");
 				}
 
 			} else if (mdiff.find()) {
@@ -41,13 +41,13 @@ public class Test { //
 				} else {
 					root = root.diff(str, root);
 					root.display();
-					//System.out.println("");
+					System.out.println("");
 				}
 			} else {
 				str = str.replaceAll("[\\s]", "");
 				root = root.expression(str);
 				root.display();
-				//System.out.println("");
+				System.out.println("");
 			}
 		} while(!str.equals("quit"));
 			
