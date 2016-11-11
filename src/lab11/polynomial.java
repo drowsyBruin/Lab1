@@ -29,11 +29,12 @@ public class polynomial {
 	}
 		
 	
-	public void display(){
+	public String display(){
 		DecimalFormat df=(DecimalFormat) DecimalFormat.getInstance();
 		polynomial tmp = this;
+		String str = "";
 		if(tmp.next == null)
-			return;
+			return str;
 		while(tmp.next.flag != 2){			//只要没到终点就执行线性访问，对系数和指数为1的情况输出格式化
 			tmp = tmp.next;
 			if(tmp.flag == 1)				//多余符号处理
@@ -48,29 +49,45 @@ public class polynomial {
 			if(tmp.flag == 0){
 				if(tmp.var.equals("")){	//纯系数
 					System.out.print(df.format(Math.pow(tmp.coef, tmp.exponent)));
+					str += df.format(Math.pow(tmp.coef, tmp.exponent));
 				}
 				else{
 					if(tmp.exponent == 1)
-						if(tmp.coef == 1)		//可能为空
+						if(tmp.coef == 1){		//可能为空
 								System.out.print(tmp.var);
-						else if(tmp.coef == -1)
+								str += tmp.var;
+						}
+						else if(tmp.coef == -1){
 							System.out.print("-"+tmp.var);
-						else
+							str += "-"+tmp.var;
+						}
+						else{
 							System.out.print(df.format(tmp.coef) + tmp.var);
+							str += df.format(tmp.coef) + tmp.var;
+						}
 					else
-						if(tmp.coef == 1)
+						if(tmp.coef == 1){
 							System.out.print(tmp.var + "^" + tmp.exponent);
-						else if(tmp.coef == -1)
+							str += tmp.var + "^" + tmp.exponent;
+						}
+						else if(tmp.coef == -1){
 							System.out.print("-" + tmp.var + "^" + tmp.exponent);
-						else
+							str += "-" + tmp.var + "^" + tmp.exponent;
+						}
+						else{
 							System.out.print(df.format(tmp.coef) + tmp.var + "^" + tmp.exponent);
+							str += df.format(tmp.coef) + tmp.var + "^" + tmp.exponent;
+						}
 				}
 			}
-			else if (tmp.flag == 1)
+			else if (tmp.flag == 1){
 				System.out.print(tmp.op);
+				str += tmp.op;
+			}
 			else
 				break;
 		}
+		return str;
 	}
 	
 	public polynomial expression(String str){

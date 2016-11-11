@@ -48,7 +48,7 @@ public class Test {
 			else{
 				str = str.replaceAll("[\\s]", "");
 				root = root.expression(str);
-				root.display();
+				System.out.println(root.display());
 				System.out.println("");
 			}
 		}while(!str.equals("quit"));
