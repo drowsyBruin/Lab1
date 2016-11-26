@@ -1,7 +1,7 @@
 package lab11;
 import lab11.polynomial;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
+import lab11.commandAnalyse;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -11,45 +11,39 @@ public class Test {
 	//ex.2xy^2*abc +	34p^1*d*q*u^2 - 24	d^7*i^7*o
 	public static void main(String []args) throws IOException{ 	
 		BufferedReader br = new BufferedReader (new InputStreamReader(System.in));
+		commandAnalyse Analyse = new commandAnalyse();
 		String str = "";
-		String str_simplify = "!simplify";
-		String str_diff = "!d/d";
-		Pattern p_simplify = Pattern.compile(str_simplify);
-		Pattern p_diff = Pattern.compile(str_diff);
+		
 		polynomial root = new polynomial();
 		do{	
 			System.out.print("> ");
 			str = br.readLine();
-			Matcher m_simplify = p_simplify.matcher(str);
-			Matcher m_diff = p_diff.matcher(str);
-			if(m_simplify.find()){
+
+			if(Analyse.Type(str) == 1){
 				if(str.equals("!simplify")){
-					root.display();	
-					System.out.println("");
+					System.out.println(root.display());	
 				}
 				else {
 					root = root.simplify(str,root);
-					root.display();	
-					System.out.println("");
+					System.out.println(root.display());	
 				}
-
 			}
-			else if(m_diff.find()){
+			else if(Analyse.Type(str) == 2){
 				if(str.equals("!d/d")){	
 					System.out.println("Error input!");
 				}
-				else
-				{
+				else{
 					root = root.diff(str,root);
-					root.display();
-					System.out.println("");
+					System.out.println(root.display());
 				}
 			}
-			else{
-				str = str.replaceAll("[\\s]", "");
+			else if (Analyse.Type(str) == 0){
+				str = Analyse.Format(str);
 				root = root.expression(str);
-				root.display();
-				System.out.println("");
+				System.out.println(root.display());
+			}
+			else{
+				System.out.println("Command Type Invaild!!!");
 			}
 		}while(!str.equals("quit"));
 			

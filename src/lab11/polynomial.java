@@ -71,6 +71,7 @@ public class polynomial {
 			else
 				break;
 		}
+		System.out.println("");
 	}
 	
 	public polynomial expression(String str){
