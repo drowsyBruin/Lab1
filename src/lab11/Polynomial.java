@@ -1,39 +1,40 @@
 package lab11;
-import lab11.polynomial_method;
+import lab11.polynomialMethod;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import java.text.DecimalFormat;
-public class polynomial {
+public class Polynomial {
 	float coef;
 	int exponent;
 	int flag;	// 0 -> item; 1 -> op; 2-> end sign;
 	char op;
 	String var;
-	polynomial next;
+	Polynomial next;
 	
-	public polynomial(){
+	public Polynomial(){
 		flag = 2;
 	}
 	
-	public polynomial(char o){
+	public Polynomial(char o){
 		flag = 1;
 		op = o;
 	}
 	
-	public polynomial(float c, String v, int e){
+	public Polynomial(float c, String v, int e){
 		flag = 0;
 		coef = c;
 		exponent = e;
 		var = v;
-		next = new polynomial();			//将next初始化为结束标志
+		next = new Polynomial();			//将next初始化为结束标志
 	}
 		
 	
-	public void display(){
+	public String display(){
 		DecimalFormat df=(DecimalFormat) DecimalFormat.getInstance();
-		polynomial tmp = this;
+		Polynomial tmp = this;
+		String str = "";
 		if(tmp.next == null)
-			return;
+			return str;
 		while(tmp.next.flag != 2){			//只要没到终点就执行线性访问，对系数和指数为1的情况输出格式化
 			tmp = tmp.next;
 			if(tmp.flag == 1)				//多余符号处理
@@ -47,36 +48,42 @@ public class polynomial {
 						}
 			if(tmp.flag == 0){
 				if(tmp.var.equals("")){	//纯系数
-					System.out.print(df.format(Math.pow(tmp.coef, tmp.exponent)));
+					str += df.format(Math.pow(tmp.coef, tmp.exponent));
 				}
 				else{
 					if(tmp.exponent == 1)
-						if(tmp.coef == 1)		//可能为空
-								System.out.print(tmp.var);
-						else if(tmp.coef == -1)
-							System.out.print("-"+tmp.var);
-						else
-							System.out.print(df.format(tmp.coef) + tmp.var);
+						if(tmp.coef == 1){		//可能为空
+								str += tmp.var;
+						}
+						else if(tmp.coef == -1){
+							str += "-"+tmp.var;
+						}
+						else{
+							str += df.format(tmp.coef) + tmp.var;
+						}
 					else
-						if(tmp.coef == 1)
-							System.out.print(tmp.var + "^" + tmp.exponent);
-						else if(tmp.coef == -1)
-							System.out.print("-" + tmp.var + "^" + tmp.exponent);
-						else
-							System.out.print(df.format(tmp.coef) + tmp.var + "^" + tmp.exponent);
+						if(tmp.coef == 1){
+							str += tmp.var + "^" + tmp.exponent;
+						}
+						else if(tmp.coef == -1){
+							str += "-" + tmp.var + "^" + tmp.exponent;
+						}
+						else{
+							str += df.format(tmp.coef) + tmp.var + "^" + tmp.exponent;
+						}
 				}
 			}
-			else if (tmp.flag == 1)
-				System.out.print(tmp.op);
+			else if (tmp.flag == 1){
+				str += tmp.op;
+			}
 			else
 				break;
 		}
-		System.out.println("");
-	}
-	
-	public polynomial expression(String str){
-		polynomial tmp = this;
-		polynomial root_new = this;
+		return str;
+	}	
+	public Polynomial expression(String str){
+		Polynomial tmp = this;
+		Polynomial root_new = this;
 		String str_pd = "[\\+\\-]";					//将多项式根据+，-符号分成各单项
 		Pattern p_pd = Pattern.compile(str_pd);
 		String []item = str.split(str_pd);
@@ -97,7 +104,7 @@ public class polynomial {
 		int num_mul;
 		String v;
 		
-		polynomial tmp_coef = tmp;
+		Polynomial tmp_coef = tmp;
 		for(String elm_item : item){				//对每一项
 			num_mul = 0;
 			String []var = elm_item.split(str_mul);
@@ -139,17 +146,17 @@ public class polynomial {
 				}
 				else
 					e = 1;
-				tmp.next = new polynomial(c, v, e);
+				tmp.next = new Polynomial(c, v, e);
 				tmp = tmp.next;
 				
 				if(num_mul > 0){					//*号连接
-					tmp.next = new polynomial('*');	
+					tmp.next = new Polynomial('*');	
 					num_mul--;
 					tmp = tmp.next;
 				}
 			}
 			if(tmp == tmp_coef){			//常数项
-				tmp.next = new polynomial(1, "", 1);
+				tmp.next = new Polynomial(1, "", 1);
 				tmp = tmp.next;
 			}			
 			tmp_coef = tmp_coef.next;
@@ -157,25 +164,26 @@ public class polynomial {
 			coef = 1;
 			
 			if(m_pd.find()){						//连接+，-符号
-				tmp.next = new polynomial(m_pd.group().charAt(0));	
+				tmp.next = new Polynomial(m_pd.group().charAt(0));	
 				tmp = tmp.next;
 			}
 			tmp_coef = tmp;
 		}
-			polynomial_method  method = new polynomial_method();	
+			polynomialMethod  method = new polynomialMethod();	
 			return method.merge(root_new);
 	}
 	
-	public polynomial simplify(String input, polynomial root){
-		 polynomial temp = root;
-		 polynomial_method method = new polynomial_method();
+	public Polynomial simplify(String input, Polynomial root){
+		 Polynomial temp = root;
+		 polynomialMethod method = new polynomialMethod();
+		 stringMethod method1 = new stringMethod();
 		 String[] count = input.split(" ");//按空格分开
 		 int num = count.length;
 		 String[] s_var= new String[num-1];
 		 float []value= new float[100];
 		 for (int i = 1; i < num; i++)
 		 {
-			 s_var[i-1] = method.GetVarStr(count[i],0);			 
+			 s_var[i-1] = method1.GetVarStr(count[i],0);			 
 			 int len = count[i].length();
 			 String n = count[i].substring(s_var[i-1].length()+1, len);
 			 float v =  Float.parseFloat(n);
@@ -218,11 +226,11 @@ public class polynomial {
 	}
 	
 	
-	public polynomial diff(String input, polynomial root){
+	public Polynomial diff(String input, Polynomial root){
 	 	
-		 polynomial temp = root;
-		 polynomial_method method = new polynomial_method();
-		 polynomial tra = root;
+		 Polynomial temp = root;
+		 polynomialMethod method = new polynomialMethod();
+		 Polynomial tra = root;
 		 String[] count = input.split(" ");//按 空格 分开
 		 int len = count.length;
 		 boolean havevar = false;

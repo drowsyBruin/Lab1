@@ -1,9 +1,9 @@
 package lab11;
-import lab11.polynomial;
+import lab11.Polynomial;
 
-public class polynomial_method {
+public class polynomialMethod {
 	
-	public void copy(polynomial root_old, polynomial root_new){
+	public void copy(Polynomial root_old, Polynomial root_new){
 		float c;
 		int e;
 		char op;
@@ -12,17 +12,17 @@ public class polynomial_method {
 			c = root_old.coef;
 			e = root_old.exponent;
 			var = root_old.var;
-			root_new.next = new polynomial(c, var, e);
+			root_new.next = new Polynomial(c, var, e);
 		}
 		else if(root_old.flag == 1){
 			op = root_old.op;
-			root_new.next = new polynomial(op);
+			root_new.next = new Polynomial(op);
 		}
 		else
-			root_new.next = new polynomial();
+			root_new.next = new Polynomial();
 	}
 	
-	public boolean like_var(polynomial root1, polynomial root2){
+	public boolean like_var(Polynomial root1, Polynomial root2){
 		String var = root1.next.var;
 		while(root2.next.flag != 2){	//root2没到最后一项
 			root2 = root2.next;
@@ -43,11 +43,11 @@ public class polynomial_method {
 		return false;
 	}
 	
-	public boolean like_term(polynomial root1, polynomial root2){
+	public boolean like_term(Polynomial root1, Polynomial root2){
 		int length1 = 0;
 		int length2 = 0;
-		polynomial tmp1 = root1;
-		polynomial tmp2 = root2;
+		Polynomial tmp1 = root1;
+		Polynomial tmp2 = root2;
 		while(tmp1.next.flag != 2){
 			tmp1 = tmp1.next;
 			if(tmp1.flag == 1 && tmp1.op != '*')	//为+，-符号时结束，只对单项式比较
@@ -104,11 +104,11 @@ public class polynomial_method {
 		}	
 	}
 	
- 	public polynomial merge_var(polynomial root_old){
-		polynomial root_new = new polynomial();
-		polynomial_method method = new polynomial_method();
-		polynomial root_tmp = root_new;
-		polynomial copy_tmp = root_tmp;
+ 	public Polynomial merge_var(Polynomial root_old){
+		Polynomial root_new = new Polynomial();
+		polynomialMethod method = new polynomialMethod();
+		Polynomial root_tmp = root_new;
+		Polynomial copy_tmp = root_tmp;
 		float coef;
 
 		//第一项的第一个变量 直接复制
@@ -136,7 +136,7 @@ public class polynomial_method {
 		
 		copy_tmp = copy_tmp.next;
 		coef = copy_tmp.coef;	
-		copy_tmp.next = new polynomial();	//root_new 最后一项的终止符
+		copy_tmp.next = new Polynomial();	//root_new 最后一项的终止符
 		if(root_old.flag == 1)
 			root_old = root_old.next;
 			
@@ -159,7 +159,7 @@ public class polynomial_method {
 					method.copy(root_old, copy_tmp);	//复制+，-符号后第一个变量
 					copy_tmp = copy_tmp.next;
 					coef *= copy_tmp.coef;
-					copy_tmp.next = new polynomial();
+					copy_tmp.next = new Polynomial();
 
 					continue;
 				}
@@ -174,7 +174,7 @@ public class polynomial_method {
 
 						root_tmp.next.coef *= coef;
 						copy_tmp.coef = 1;
-						copy_tmp.next = new polynomial();
+						copy_tmp.next = new Polynomial();
 					}
 					if(root_old.next.flag != 2)
 						root_old = root_old.next;	
@@ -186,10 +186,10 @@ public class polynomial_method {
 		return root_new;
 	}	
  	
- 	public polynomial merge_term(polynomial root_old){
-		polynomial root_new = new polynomial();
-		polynomial_method method = new polynomial_method();
-		polynomial root_tmp = root_new;
+ 	public Polynomial merge_term(Polynomial root_old){
+		Polynomial root_new = new Polynomial();
+		polynomialMethod method = new polynomialMethod();
+		Polynomial root_tmp = root_new;
 		boolean flag = false;				//false-无同类项; true-有同类项
 
 		//第一项 直接复制
@@ -204,7 +204,7 @@ public class polynomial_method {
 				if(root_old.next.op != '*')
 					break;
 		}
-		root_tmp.next = new polynomial();	//root_new 最后一项的终止符
+		root_tmp.next = new Polynomial();	//root_new 最后一项的终止符
 
 		
 		while(root_old.next.flag != 2){		//root_old还没到最后一项，循环继续
@@ -282,29 +282,14 @@ public class polynomial_method {
 					method.copy(root_old, root_tmp);	//格式化复制最后一项
 					root_tmp = root_tmp.next;
 				}
-				root_tmp.next = new polynomial();	//root_new 最后一项的终止符
+				root_tmp.next = new Polynomial();	//root_new 最后一项的终止符
 			}
 		}
 		return root_new;
 	}
- 	
-	 public boolean Isletter(char a)
-	 {
-		 if ((a >= 'A' && a <= 'Z') || (a >= 'a' && a <= 'z')) 
-			 return true;
-		 else 
-			 return false;
-	 }
-
-	 public String GetVarStr(String input, int i)
-	 {
-		 int j = i + 1;
-		 for (;j < input.length() && Isletter(input.charAt(j)); j++);
-		 return input.substring(i,j);
-	 }
 	 
-	 public polynomial merge(polynomial root_old){
-		 polynomial root_new;
+	 public Polynomial merge(Polynomial root_old){
+		 Polynomial root_new;
 
 		 root_new = merge_var(root_old);
 
@@ -315,10 +300,10 @@ public class polynomial_method {
 		 return root_new;
 	 }
 	 
-     public polynomial clear(polynomial root_old){
- 		polynomial root_new = new polynomial();
- 		polynomial root_tmp = root_new;
- 		polynomial_method method = new polynomial_method();
+     public Polynomial clear(Polynomial root_old){
+ 		Polynomial root_new = new Polynomial();
+ 		Polynomial root_tmp = root_new;
+ 		polynomialMethod method = new polynomialMethod();
  		while(root_old.next.flag != 2){	//没到最后一项
  			if(root_old.next.coef == 0){
  				root_old = root_old.next;
@@ -338,7 +323,7 @@ public class polynomial_method {
  						if(root_old.op == '-'){
  		 					method.copy(root_old, root_tmp);	//复制符号位
  		 					root_tmp = root_tmp.next;
- 		 					root_tmp.next = new polynomial();
+ 		 					root_tmp.next = new Polynomial();
  						}
  					root_old = root_old.next;
  				}
@@ -346,13 +331,13 @@ public class polynomial_method {
  				else{
  					method.copy(root_old, root_tmp);	//复制符号位
  					root_tmp = root_tmp.next;
- 					root_tmp.next = new polynomial();
+ 					root_tmp.next = new Polynomial();
  					root_old = root_old.next;
  				}
  				while(root_old.flag == 0){
  					method.copy(root_old, root_tmp);
  					root_tmp = root_tmp.next;
- 					root_tmp.next = new polynomial();
+ 					root_tmp.next = new Polynomial();
  					root_old = root_old.next;
  					if(root_old.flag == 2)
  						return root_new;
